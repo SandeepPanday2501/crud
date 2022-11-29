@@ -2,7 +2,7 @@
 @section('content')
 <div class="container  shadow p-3 mb-5 mt-5 bg-body rounded" style="width:500px;">
   <form action="{{route('loginuser')}}" method="post">
-    <h2 class="text-center">Login</h2>
+    <h2 class="text-center">Login To Account</h2>
     @if(Session::has('fail'))
     <div class="alert alert-danger alert-dissmissible" role='alert'>
       {{Session::get('fail')}}
@@ -35,7 +35,7 @@
     <div class="mb-3 form-check">
       <label class="form-check-label">Don't have an Account?<a href="{{route('register')}}">Register</a></label>
     </div>
-    <button type="submit" class="btn btn-primary form-control">Submit</button>
+    <button type="submit" class="btn btn-secondary form-control">Submit</button>
   </form>
 </div>
 

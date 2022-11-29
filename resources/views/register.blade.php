@@ -2,7 +2,7 @@
 @section('content')
 <div class="container  shadow p-3 mb-5 mt-5 bg-body rounded" style="width:500px;">
     <form action="{{route('registeruser')}}" method="post">
-        <h2 class="text-center">Register</h2>
+        <h2 class="text-center">Register New Account</h2>
         @csrf
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label ">Name</label>
@@ -37,7 +37,7 @@
         <div class="mb-3 form-check">
             <label class="form-check-label">Already have an Account?<a href="{{route('login')}}">Login</a></label>
         </div>
-        <button type="submit" class="btn btn-primary form-control">Submit</button>
+        <button type="submit" class="btn btn-secondary form-control">Submit</button>
     </form>
 </div>
 

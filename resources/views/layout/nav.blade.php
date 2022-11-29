@@ -12,7 +12,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{route('dashboard')}}">CRUD</a>
+      <a class="navbar-brand" href="{{route('dashboard')}}">CRUD Application</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,6 @@
             <a class="nav-link active" aria-current="page" href="{{route('dashboard')}}">Home</a>
             <a class="nav-link active" aria-current="page" href="{{route('add')}}">More</a>
 
-
             @endauth
           </li>
         </ul>
@@ -33,6 +32,7 @@
           <a class="nav-link active" aria-current="page" href="{{route('login')}}">Login</a>
           @endguest
           @auth
+          <span>Hello {{auth()->user()->name}}</span>
           <form action="{{route('logout')}}">
 
             <button type="submit" class="btn btn-secondary">Log Out</button>

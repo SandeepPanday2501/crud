@@ -2,7 +2,7 @@
 @section('content')
 <form action="{{route('addstu')}}" method="post">
     @csrf
-    <div class="container  shadow p-3 mb-5 mt-2 bg-body rounded" style="width:500px;">
+    <div class="container shadow p-3 mb-5 mt-2 bg-body rounded" style="width:500px;">
         <h2 class="text-center">Add Employee</h2>
         <!-- <div class="mb-3">
                  <label for="exampleFormControlInput1" class="form-label">ID</label> 
@@ -58,7 +58,7 @@
             </div>
             @enderror
         </div>
-        <button type="submit" class="btn btn-primary form-control">SAVE</button>
+        <button type="submit" class="btn btn-secondary form-control">SAVE</button>
     </div>
 </form>
 @endsection

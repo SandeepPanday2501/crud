@@ -30,7 +30,7 @@
             <label for="exampleFormControlInput1" class="form-label">Post</label>
             <input type="text" name="post" class="form-control" value="{{$data->post}}" id="exampleFormControlInput1">
         </div>
-        <button type="submit" class="btn btn-primary form-control">Edit</button>
+        <button type="submit" class="btn btn-secondary form-control">Edit</button>
     </div>
 </form>
 @endsection
